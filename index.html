@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Westbrook City Band - Performance schedule, donate, and connect with our local music community">
+    <title>Westbrook City Band</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1 class="logo">Westbrook City Band</h1>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#donate" class="donate-btn">Donate</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Making Music Together</h2>
+                <p>Join us for inspiring performances and community connection through music</p>
+                <div class="hero-buttons">
+                    <a href="#events" class="btn btn-primary">Upcoming Events</a>
+                    <a href="#donate" class="btn btn-secondary">Support Us</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>The Westbrook City Band has been delighting audiences for over 140 years with a diverse musical repertoire. Composed of musicians from a variety of backgrounds, the band performs throughout the year enriching the cultural landscape of Westbrook, Maine.</p>
+                <p>As a registered 501(c)3 nonprofit organization, we rely on the support of our community to continue providing free concerts throughout the year.</p>
+            </div>
+        </section>
+
+        <!-- Events Section -->
+        <section id="events" class="section section-alt">
+            <div class="container">
+                <h2>Upcoming Events</h2>
+                <div class="events-grid">
+                    <!-- Example event - you'll update these -->
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="month">NOV</span>
+                            <span class="day">4</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Concert</h3>
+                            <p class="event-time">7:00 PM</p>
+                            <p class="event-location">Deering Pavilion</p>
+                            <p><!-- TODO: Description --></p>
+                        </div>
+                    </div>
+
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="month">Nov</span>
+                            <span class="day">11</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Concert</h3>
+                            <p class="event-time">7:00 PM</p>
+                            <p class="event-location">Millbrook Estates</p>
+                            <p><!-- TODO: Description --></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rehearsal-info">
+                    <h3>Rehearsal Schedule</h3>
+                    <p><strong>When:</strong> Every Tuesday, 7:00 PM - 8:30 PM</p>
+                    <p><strong>Where:</strong>Westbrook Community Center, Spruce Room</p>
+                    <p>New members welcome! Contact us for more information.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Donate Section -->
+        <section id="donate" class="section section-alt">
+            <div class="container">
+                <h2>Support Our Music</h2>
+                <p>Your generous donations help us purchase music, maintain instruments, and provide free community concerts. As a 501(c)3 organization, your contribution is tax-deductible.</p>
+                
+                <div class="donate-options">
+                    <div class="donate-card">
+                        <h3>One-Time Donation</h3>
+                        <p>Make a single contribution to support our mission</p>
+                        <!-- TODO: PayPal/Venmo Donate Button -->
+                        <div id="paypal-button-container"></div>
+                        <!-- Alternative: Direct link approach -->
+                        <a href="https://www.paypal.com/donate/?hosted_button_id=YOUR_BUTTON_ID" class="btn btn-primary" target="_blank">Donate via PayPal</a>
+                    </div>
+                    
+                    <div class="donate-card">
+                        <h3>By Check</h3>
+                        <p>Mail your tax-deductible donation to:</p>
+                        <address>
+                           <!-- TODO: Address -->
+                            Westbrook City Band<br>
+                            123 Main Street<br>
+                            Westbrook, ME 04092
+                        </address>
+                    </div>
+                </div>
+                
+                <p class="tax-info"><strong>Tax ID:</strong> 01-0505379</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <p><strong>Email:</strong> <a href="mailto:westbrookcityband@gmail.com">westbrookcityband@gmail.com</a></p>
+                        
+                        <div class="social-links">
+                            <h3>Follow Us</h3>
+                            <a href="https://facebook.com/westbrookcityband" target="_blank">Facebook</a>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <h3>Send Us a Message</h3>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Westbrook City Band. All rights reserved. | 501(c)3 Tax-Exempt Organization</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
